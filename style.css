@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Poppins','Roboto';
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.scroll {
+    position: absolute;
+    height: 3rem;
+    bottom: 0;
+    left: 48.5%;
+    
+}
+.find-me {
+    position: absolute;
+    bottom: 11rem;
+    left: 47%;
+    color: #F5F5F5;
+    font-weight: 300;
+    font-size: larger;
+}
+.scroll-more {
+    position: absolute;
+    height: 3rem;
+    bottom: 1.4rem;
+    left: 46.4%;
+    color: #F5F5F5;
+    font-weight: 200;
+    font-size: smaller;
+
+
+}
+
+.stars {
+    position: absolute;
+    opacity: .2;
+    z-index: -10;
+}
+.moon {
+    position: absolute;
+    height: 10rem;
+    z-index: -10;
+}
+.earth {
+    position: absolute;
+    width: 100%;
+    bottom: -80px;
+    left: 0;
+    z-index: -10;
+}
+
+.meteor {
+    position: absolute;
+    width: 25em;
+    right: 6rem;
+    top: 3rem;
+}
+.pp {
+    position: absolute;
+    height: 10rem;
+    right: 19.35rem;
+    top: 10.3rem;
+    z-index: -1;
+}
+
+.cta {
+    position: absolute;
+    top: 13rem;
+    left: 5rem;
+}
+.cta-name {
+    font-weight: 300;
+    color: rgb(104, 104, 104);
+    margin-bottom: .5em;
+}
+.cta-role {
+    font-weight: 900;
+    font-size: xx-large;
+    margin-bottom: 1em ;
+}
+.cta-button {
+    color: #FDC902;
+    border: 3px solid #FDC902;
+    background: transparent;
+    font-weight: 800;
+    padding: 1em 2em;
+    cursor: pointer;
+    outline: none;
+    transition: color .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.cta-button:hover {
+    color: #F5F5F5;
+    
+    background: #FDC902;
+
+}
+
+.sosmed {
+    position: absolute;
+    bottom: 7rem;
+    left: 48%;
+    color: #F5F5F5;
+    font-weight: 300;
+    font-size: 9pt;
+    text-align: center;
+}
+
+.sosmed img {
+    height: 30px;
+}
+.sosmed a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+.instagram {
+    left: 57.5%;
+    bottom: 5rem;
+}
+
+.linkedin {
+    left: 38.5%;
+    bottom: 5rem;
+}
+
+.github {
+
+}
+
+.aboutme img {
+    height: 26rem;
+
+}
+
+.aboutme {
+    display: flex;
+    margin: 10rem 5rem 10rem 5rem;
+}
+.aboutme div h2{
+    font-family: 'Poppins';
+    opacity: 0.5;
+    bottom: .8em;
+    position: absolute;
+    color: white;
+    font-size: 100pt;
+    font-style: italic;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.aboutme div {
+    background: #fd7d25;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 1em 2em;
+}
+.aboutme div img{
+    font-family: 'Roboto';
+
+}
+.aboutme p {
+    color: white;
+    font-weight: 200;
+}
+.portofolio {
+    margin: 10rem 5rem 10rem 5rem;
+}
+.portofolio h2{
+    font-family: 'Poppins';
+    color: #fd7d25;
+    opacity: .5;
+    
+    font-size: 100pt;
+    margin-top: 1em;
+}
+.grid-port {
+    display: grid;
+    grid: repeat(3,15rem) / repeat(3,1fr);
+}
+.grid-port img {
+    height: 100%;
+}
+.algo {
+    background: url('assets/algo.png');
+    background-size: cover;
+}
+.api {
+    background: url('assets/api\ covid.png');
+    background-size: cover;
+}
+.ardu {
+    background: url('assets/aplikasi\ pengontrol\ arduino.png');
+    background-size: cover;
+}
+.cpp {
+    background: url('assets/c++.png');
+    background-size: cover;
+}
+.drop {
+    background: url('assets/dropbox.png');
+    background-size: cover;
+}
+.ds {
+    background: url('assets/dugamscout.png');
+    background-size: cover;
+}
+.film {
+    background: url('assets/film\ pendek.png');
+    background-size: cover;
+}
+.hantis {
+    background: url('assets/handsanitizer\ otomatis.png');
+    background-size: cover;
+}
+.landing {
+    background: url('assets/landing\ page.png');
+    background-size: cover;
+}
+
+.blog {
+    margin: 10rem 5rem 10rem 5rem;
+}
+.blog h2 {
+    font-family: 'Poppins';
+    color: #fd7d25;
+    opacity: .5;
+    font-size: 100pt;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.blog-content {
+    display: grid;
+    grid: 30rem / repeat(3,1fr);
+    gap:4em;
+}
+
+
+
+.blog-card {
+    background:#fff;
+    box-shadow: 0 0 8px 5px rgba(0, 0, 0, .2);
+}
+.h-blog {
+    height: 18rem;
+}
+.blog-card footer{
+    padding: 1em 2em;   
+    background:#f5f5f5;
+}
+.blog-tag {
+    padding: 1em 2em;
+}
+.blog-tag h3 {
+    color: #fd7d25;
+    font-size: xx-large;
+}
+
+.team h2 {
+    font-family: 'Poppins';
+    color: #fd7d25;
+    opacity: .5;
+    font-size: 100pt;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.team-card img{
+    height: 18rem;
+    border-radius: 50%;
+    margin: auto;
+}
+.team-card {
+    text-align: center;
+}
+
+.team-content {
+    display: grid;
+    grid: 30rem / repeat(3,1fr);
+    gap:4em;
+}
+
+.contact {
+    border-radius: 25px 25px 0 0;
+}
+.contact .h1 {
+    background:#fd7d25
+}
+.contact div h1 {
+    font-family: 'Poppins';
+    color: #fff;
+    font-size: 100pt;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+.form {
+    padding: 2em 4em;
+    background:#fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10rem;
+}
+.form input, textarea {
+    padding: 1rem 2rem;
+    display: block;
+    border: 1px solid #fd7d25;
+    width: 100%;
+    margin-bottom: 1em;
+
+}
+
+.form button {
+    background:#fd7d25;
+    width: 100%;
+    outline: none;
+    border:none;
+    padding: 2rem 2rem;
+    color: white;
+    font-size: larger;
+
+}

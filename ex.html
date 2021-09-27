@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Poppins','Roboto','sans-serif';
+        background-color: #F6F7FC;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: end;
+        padding: 1rem 4rem;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .3);
+        background: #FFF;
+    }
+    nav a {
+        text-decoration: none;
+        color:rgb(39, 39, 39);
+    }
+    nav ul {
+        display: inline-flex;
+        gap: 1em;
+    }
+    nav ul li {
+        list-style-type: none;
+        
+    }
+    
+    
+    main {
+        margin: 0 4rem;
+    }
+    
+    .profile {
+        height: 150px;
+        width: auto;
+        border-radius: 50%;
+    }
+    
+    .main-info {
+        display: flex;
+        align-items: center;
+        gap:1em;
+    }
+    .personal-card {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        margin: 3rem 0;
+        padding: 1rem 2em;
+        background: #FFF;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .15);
+    }
+    
+    .role {
+        color:rgb(192, 192, 192);
+    }
+    
+    .form-me {
+        padding: .5em 1em;
+        background: #FFF;
+    }
+    
+    .form-me * {
+        display: block;
+    }
+    .form-me input {
+        width: 100%;
+        padding: 1em 2em;
+        margin-bottom: 1rem;
+    }
+    
+    .form-me label {
+        font-weight: bold;
+    }
+    .form-me button {
+        padding: 1em 2em;
+        background:seagreen;
+        color: white;
+        width: 100%;
+        outline: none;
+        border: none;
+    }
+    
+    .btn-kontak {
+        padding: 1em 2em;
+        background:#0000F6;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .btn-resume {
+        padding: 1em 2em;
+        background: white;
+        color: #96B784;
+        outline: none;
+        border: 1px solid #96B784;
+        border-radius: 5px;
+    }
+
+    <title>My Portofolio</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Inventory</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="personal-card">
+            <div class="main-info">
+                <img src="https://www.kindpng.com/picc/m/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png"
+                    class="profile">
+                <div class="profile-desc">
+                    <h3 class="name">Fikri H Badjeber</h3>
+                    <p class="role">Front End Designer</p>
+                    <br>
+                    <button class="btn-kontak">Kontak</button>
+                    <button class="btn-resume">Resume</button>
+                </div>
+            </div>
+            <div class="detail-info">
+                <table>
+                    <tr>
+                        <td style="padding-right: 5rem;"><b>Availability</b></td>
+                        <td>Full Time</td>
+                    </tr>
+                    <tr>
+                        <td><b>Usia</b></td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td><b>Lokasi</b></td>
+                        <td>Jakarta, Indonesia</td>
+                    </tr>
+                    <tr>
+                        <td><b>Pengalaman</b></td>
+                        <td>2 Tahun</td>
+                    </tr>
+                    <tr>
+                        <td><b>Email</b></td>
+                        <td>fikrihusenbadjeber@gmail.com</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="form-me">
+            <form>
+                <label>Nama</label>
+                <input type="text" name="nama">
+                <label>Role</label>
+                <input type="text" name="role">
+                <label>Availability</label>
+                <input type="text" name="tersedia">
+                <label>Age</label>
+                <input type="text" name="age">
+                <label>Lokasi</label>
+                <input type="text" name="lokasi">
+                <label>Years Experience</label>
+                <input type="text" name="pengalaman">
+                <label>Email</label>
+                <input type="email" name="email">
+                <button>Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
